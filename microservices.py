@@ -28,4 +28,4 @@ def best_places():
     session.close()
     return Response(res, mimetype='application/json')
 
-app.run(port=5001)
+app.run(host='0.0.0.0')

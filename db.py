@@ -3,7 +3,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, validates
 
 # start database engine
-db_uri = 'sqlite:////Users/alexloyko/Desktop/RestaurantInspections.db'
+db_uri = 'sqlite:////root/orchard-backend/RestaurantInspections.db'
 engine = create_engine(db_uri)
 
 Base = declarative_base()
