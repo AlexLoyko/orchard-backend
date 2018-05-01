@@ -38,10 +38,8 @@ This repo:
     `python db.py` <br/>
     This will create the database file as well as initialize the model for the database.<br/>
     Then run:<br/>
-    `python etl_job.py`
+    `python etl_job.py`<br/>
     This will load the data into the database with the following schema:<br/>
-      
-      # Model
       ```
       #restaurant model 
       class Restaurant(Base):
