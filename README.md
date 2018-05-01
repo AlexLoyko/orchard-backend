@@ -42,7 +42,8 @@ This repo:
     This will load the data into the database with the following schema:<br/>
       
       # Model
-      ```restaurant model 
+      ```
+      #restaurant model 
       class Restaurant(Base):
           __tablename__ = 'restaurants' 
           id = Column(Integer, primary_key=True, autoincrement=False) 
@@ -55,7 +56,7 @@ This repo:
           cuisine = Column(String)
         
 
-      inspection model
+      #inspection model
       class Inspection(Base): 
           __tablename__ = 'inspections' 
           id = Column(Integer, primary_key=True)
