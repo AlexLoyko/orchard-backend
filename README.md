@@ -25,11 +25,11 @@ This repo:
    If it doesn't, consider following the following instructions:
    
    On Ubuntu:
-      sudo apt install apache2
-      sudo service apache2 start
+      `sudo apt install apache2`
+      `sudo service apache2 start`
    Macs come with Apache server by default, but in case it is not running, run the command:
-      sudo apachectl -k start
-   On Windows:
+      `sudo apachectl -k start`
+   On Windows: <br/>
       Watch this video https://www.youtube.com/watch?v=A_NGnq31d18
    
  2. Create the database:
