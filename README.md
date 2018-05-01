@@ -41,35 +41,35 @@ This repo:
     `python etl_job.py`
     This will load the data into the database with the following schema:<br/>
       
-      # MODEL 
+      # Model
       ```restaurant model 
-      class Restaurant(Base): <br/> 
-          __tablename__ = 'restaurants' <br/>
-          id = Column(Integer, primary_key=True, autoincrement=False) <br/>
-          name = Column(String)  <br/>
-          boro = Column(String)  <br/>
-          building = Column(String) <br/>
-          street = Column(String)   <br/>
-          zip = Column(Integer)    <br/>
-          phone = Column(String)    <br/>
-          cuisine = Column(String)  <br/>
+      class Restaurant(Base):
+          __tablename__ = 'restaurants' 
+          id = Column(Integer, primary_key=True, autoincrement=False) 
+          name = Column(String) 
+          boro = Column(String) 
+          building = Column(String)
+          street = Column(String) 
+          zip = Column(Integer) 
+          phone = Column(String) 
+          cuisine = Column(String)
         
 
       inspection model
-      class Inspection(Base):   <br/>
-          __tablename__ = 'inspections' <br/>
-          id = Column(Integer, primary_key=True) <br/>
-          rest_id = Column(Integer, ForeignKey(Restaurant.id)) <br/>
-          inspection_date = Column(Date)  <br/>
+      class Inspection(Base): 
+          __tablename__ = 'inspections' 
+          id = Column(Integer, primary_key=True)
+          rest_id = Column(Integer, ForeignKey(Restaurant.id))
+          inspection_date = Column(Date)
           action = Column(String)    <br/>
-          violation_code = Column(String)   <br/>
-          violation_desc = Column(String)   <br/>
-          is_critical = Column(Boolean)     <br/>
-          score = Column(Integer)          <br/>
-          grade = Column(String)           <br/>
-          grade_date = Column(Date)       <br/>
-          record_date = Column(Date)       <br/>
-          inspection_type = Column(String) <br/>
+          violation_code = Column(String) 
+          violation_desc = Column(String) 
+          is_critical = Column(Boolean) 
+          score = Column(Integer) 
+          grade = Column(String) 
+          grade_date = Column(Date)
+          record_date = Column(Date)
+          inspection_type = Column(String)
        ```
           
   3.    Finally, to start the endpoint handler, run:
