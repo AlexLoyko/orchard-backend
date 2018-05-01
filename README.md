@@ -42,7 +42,7 @@ This repo:
     This will load the data into the database with the following schema:<br/>
     
       # restaurant model 
-      class Restaurant(Base): <br/> 
+      `class Restaurant(Base): <br/> 
           __tablename__ = 'restaurants' <br/>
           id = Column(Integer, primary_key=True, autoincrement=False) <br/>
           name = Column(String)  <br/>
@@ -52,9 +52,10 @@ This repo:
           zip = Column(Integer)    <br/>
           phone = Column(String)    <br/>
           cuisine = Column(String)  <br/>
+        `
 
       # inspection model
-      class Inspection(Base):   <br/>
+      `class Inspection(Base):   <br/>
           __tablename__ = 'inspections' <br/>
           id = Column(Integer, primary_key=True) <br/>
           rest_id = Column(Integer, ForeignKey(Restaurant.id)) <br/>
@@ -68,6 +69,7 @@ This repo:
           grade_date = Column(Date)       <br/>
           record_date = Column(Date)       <br/>
           inspection_type = Column(String) <br/>
+       `
           
   3.    Finally, to start the endpoint handler, run:
        `python microservices.py`
