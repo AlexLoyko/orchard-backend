@@ -35,9 +35,9 @@ This repo:
  2. Create the database:
     Make sure the dataset is in the same directpory with the python scripts(in the repo directory.)
     Then run: <br/>
-    `python db.py`
+    `python db.py` <br/>
     This will create the database file as well as initialize the model for the database.<br/>
-    Then run:
+    Then run:<br/>
     `python etl_job.py`
     This will load the data into the database with the following schema:<br/>
       
