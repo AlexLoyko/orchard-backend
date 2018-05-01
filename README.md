@@ -62,7 +62,7 @@ This repo:
           id = Column(Integer, primary_key=True)
           rest_id = Column(Integer, ForeignKey(Restaurant.id))
           inspection_date = Column(Date)
-          action = Column(String)    <br/>
+          action = Column(String)
           violation_code = Column(String) 
           violation_desc = Column(String) 
           is_critical = Column(Boolean) 
