@@ -24,13 +24,13 @@ This repo:
    
    If it doesn't, consider following the following instructions:
    
-   On Ubuntu:
-      `sudo apt install apache2`
-      `sudo service apache2 start`
-   Macs come with Apache server by default, but in case it is not running, run the command:
-      `sudo apachectl -k start`
+   On Ubuntu:<br/>
+      `sudo apt install apache2` <br/>
+      `sudo service apache2 start`<br/>
+   Macs come with Apache server by default, but in case it is not running, run the command:<br/>
+      `sudo apachectl -k start`<br/>
    On Windows: <br/>
-      Watch this video https://www.youtube.com/watch?v=A_NGnq31d18
+      Watch this video https://www.youtube.com/watch?v=A_NGnq31d18<br/>
    
  2. Create the database:
     Make sure the dataset is in the same directpory with the python scripts(in the repo directory.)
