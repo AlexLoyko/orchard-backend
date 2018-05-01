@@ -41,8 +41,8 @@ This repo:
     `python etl_job.py`
     This will load the data into the database with the following schema:<br/>
       
-      # NOTE
-      restaurant model 
+      # MODEL 
+      ```restaurant model 
       class Restaurant(Base): <br/> 
           __tablename__ = 'restaurants' <br/>
           id = Column(Integer, primary_key=True, autoincrement=False) <br/>
@@ -70,7 +70,7 @@ This repo:
           grade_date = Column(Date)       <br/>
           record_date = Column(Date)       <br/>
           inspection_type = Column(String) <br/>
-       
+       ```
           
   3.    Finally, to start the endpoint handler, run:
        `python microservices.py`
